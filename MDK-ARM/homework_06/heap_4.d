@@ -1,8 +1,8 @@
 homework_06\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c
-homework_06\heap_4.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+homework_06\heap_4.o: D:\Embedded Systems Course (2026)\ProgramFile\MDK\Core\ARM\ARMCC\Bin\..\include\stdlib.h
 homework_06\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-homework_06\heap_4.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
-homework_06\heap_4.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+homework_06\heap_4.o: D:\Embedded Systems Course (2026)\ProgramFile\MDK\Core\ARM\ARMCC\Bin\..\include\stddef.h
+homework_06\heap_4.o: D:\Embedded Systems Course (2026)\ProgramFile\MDK\Core\ARM\ARMCC\Bin\..\include\stdint.h
 homework_06\heap_4.o: ../Core/Inc/FreeRTOSConfig.h
 homework_06\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 homework_06\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h

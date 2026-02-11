@@ -732,12 +732,13 @@ ARM Macro Assembler    Page 12
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
 interwork --depend=homework_06\startup_stm32f411xe.d -ohomework_06\startup_stm3
-2f411xe.o -I../Core/Inc -I.\RTE\_homework_06 -IC:\Users\76530\AppData\Local\Arm
-\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include -IC:\Users\76530\AppData\Local\Arm\Pa
-cks\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include --prede
-fine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 536" --predefine="
-_RTE_ SETA 1" --predefine="STM32F411xE SETA 1" --predefine="_RTE_ SETA 1" --lis
-t=startup_stm32f411xe.lst startup_stm32f411xe.s
+2f411xe.o -I../Core/Inc -I.\RTE\_homework_06 -I"D:\Embedded Systems Course (202
+6)\ProgramFile\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include" -I"D:\Embedded Sys
+tems Course (2026)\ProgramFile\MDK\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSI
+S\Device\ST\STM32F4xx\Include" --predefine="__MICROLIB SETA 1" --predefine="__U
+VISION_VERSION SETA 538" --predefine="_RTE_ SETA 1" --predefine="STM32F411xE SE
+TA 1" --predefine="_RTE_ SETA 1" --list=startup_stm32f411xe.lst startup_stm32f4
+11xe.s
 
 
 

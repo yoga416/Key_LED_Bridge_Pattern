@@ -1,7 +1,7 @@
 homework_06\freertos.o: ../Core/Src/freertos.c
 homework_06\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-homework_06\freertos.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
-homework_06\freertos.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+homework_06\freertos.o: D:\Embedded Systems Course (2026)\ProgramFile\MDK\Core\ARM\ARMCC\Bin\..\include\stddef.h
+homework_06\freertos.o: D:\Embedded Systems Course (2026)\ProgramFile\MDK\Core\ARM\ARMCC\Bin\..\include\stdint.h
 homework_06\freertos.o: ../Core/Inc/FreeRTOSConfig.h
 homework_06\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 homework_06\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
