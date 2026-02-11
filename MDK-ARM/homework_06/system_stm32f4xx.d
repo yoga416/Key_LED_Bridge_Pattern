@@ -2,7 +2,7 @@ homework_06\system_stm32f4xx.o: ../Core/Src/system_stm32f4xx.c
 homework_06\system_stm32f4xx.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 homework_06\system_stm32f4xx.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h
 homework_06\system_stm32f4xx.o: ../Drivers/CMSIS/Include/core_cm4.h
-homework_06\system_stm32f4xx.o: D:\Embedded Systems Course (2026)\ProgramFile\MDK\Core\ARM\ARMCC\Bin\..\include\stdint.h
+homework_06\system_stm32f4xx.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 homework_06\system_stm32f4xx.o: ../Drivers/CMSIS/Include/cmsis_version.h
 homework_06\system_stm32f4xx.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 homework_06\system_stm32f4xx.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
@@ -14,7 +14,7 @@ homework_06\system_stm32f4xx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ha
 homework_06\system_stm32f4xx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
 homework_06\system_stm32f4xx.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 homework_06\system_stm32f4xx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-homework_06\system_stm32f4xx.o: D:\Embedded Systems Course (2026)\ProgramFile\MDK\Core\ARM\ARMCC\Bin\..\include\stddef.h
+homework_06\system_stm32f4xx.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 homework_06\system_stm32f4xx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
 homework_06\system_stm32f4xx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
 homework_06\system_stm32f4xx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h

@@ -1,8 +1,8 @@
 homework_06\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c
-homework_06\event_groups.o: D:\Embedded Systems Course (2026)\ProgramFile\MDK\Core\ARM\ARMCC\Bin\..\include\stdlib.h
+homework_06\event_groups.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 homework_06\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-homework_06\event_groups.o: D:\Embedded Systems Course (2026)\ProgramFile\MDK\Core\ARM\ARMCC\Bin\..\include\stddef.h
-homework_06\event_groups.o: D:\Embedded Systems Course (2026)\ProgramFile\MDK\Core\ARM\ARMCC\Bin\..\include\stdint.h
+homework_06\event_groups.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+homework_06\event_groups.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 homework_06\event_groups.o: ../Core/Inc/FreeRTOSConfig.h
 homework_06\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 homework_06\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
