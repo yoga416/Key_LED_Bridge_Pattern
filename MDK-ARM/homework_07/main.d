@@ -30,6 +30,7 @@ homework_07\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 homework_07\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 homework_07\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 homework_07\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+homework_07\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 homework_07\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h
 homework_07\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 homework_07\main.o: ../Core/Inc/FreeRTOSConfig.h
@@ -41,4 +42,5 @@ homework_07\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrapp
 homework_07\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 homework_07\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
 homework_07\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
+homework_07\main.o: ../Core/Inc/usart.h
 homework_07\main.o: ../Core/Inc/gpio.h
