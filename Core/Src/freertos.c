@@ -25,16 +25,30 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <stdio.h>
+#include "usart.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
+#ifdef __GNUC__
+  /* With GCC, small printf (option LD Linker->Libraries->Small printf
+     set to 'Yes') calls __io_putchar() */
+  #define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
+#else
+  #define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
+#endif /* __GNUC__ */ 
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+PUTCHAR_PROTOTYPE {
+  /* Place your implementation of fputc here */
+  /* e.g. write a character to the USART1 and Loop until the end of transmission */
+  HAL_UART_Transmit(&huart1, (uint8_t *)&ch, 1, HAL_MAX_DELAY);
+
+  return ch;  
+}
 
 /* USER CODE END PD */
 
@@ -68,6 +82,12 @@ const osThreadAttr_t myTask03_attributes = {
   .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityLow,
 };
+/* Definitions for Mutex */
+osMutexId_t MutexHandle;
+const osMutexAttr_t Mutex_attributes = {
+  .name = "Mutex"
+  
+};
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -89,6 +109,9 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN Init */
 
   /* USER CODE END Init */
+  /* Create the mutex(es) */
+  /* creation of Mutex */
+  MutexHandle = osMutexNew(&Mutex_attributes);
 
   /* USER CODE BEGIN RTOS_MUTEX */
   /* add mutexes, ... */
@@ -139,7 +162,11 @@ void StartDefaultTask(void *argument)
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+   if(osMutexAcquire(MutexHandle, osWaitForever) == osOK) {
+      printf("I love FreeRTOS!\r\n");
+      osMutexRelease(MutexHandle);
+    }
+    osDelay(500);
   }
   /* USER CODE END StartDefaultTask */
 }
@@ -157,7 +184,11 @@ void StartTask02(void *argument)
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+  if(osMutexAcquire(MutexHandle, osWaitForever) == osOK) {
+      printf("FreeRTOS is great!\r\n");
+      osMutexRelease(MutexHandle);
+    }
+    osDelay(1000);
   }
   /* USER CODE END StartTask02 */
 }
@@ -174,8 +205,8 @@ void StartTask03(void *argument)
   /* USER CODE BEGIN StartTask03 */
   /* Infinite loop */
   for(;;)
-  {
-    osDelay(1);
+  {  
+ osDelay(100);
   }
   /* USER CODE END StartTask03 */
 }
